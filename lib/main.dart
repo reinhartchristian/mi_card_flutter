@@ -17,7 +17,6 @@ class MyApp extends StatelessWidget {
             Center(
               child: CircleAvatar(
                 radius: 150,
-                backgroundColor: Colors.red[200],
                 backgroundImage: NetworkImage(
                     'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80'),
               ),
@@ -28,6 +27,7 @@ class MyApp extends StatelessWidget {
             Text(
               'Reinhart Christian',
               style: TextStyle(
+                fontFamily: 'Pacifico',
                 fontSize: 50,
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
@@ -37,27 +37,71 @@ class MyApp extends StatelessWidget {
               height: 20,
             ),
             Text(
-              'Flutter Developer',
-              style: TextStyle(fontSize: 35, color: Colors.white),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            Container(
-              color: Colors.white,
-              width: 700,
-              height: 75,
-              child: Row(),
-            ),
-            SizedBox(
-              height: 20,
+              'FLUTTER DEVELOPER',
+              style: TextStyle(
+                fontFamily: 'SourceSansPro',
+                fontSize: 35,
+                color: Colors.teal.shade100,
+                fontWeight: FontWeight.bold,
+                letterSpacing: 5,
+              ),
             ),
             Container(
-              color: Colors.white,
-              width: 700,
-              height: 75,
-              child: Row(),
-            )
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(25),
+                color: Colors.white,
+              ),
+              padding: EdgeInsets.all(20),
+              margin: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                    size: 50,
+                  ),
+                  SizedBox(
+                    width: 50,
+                  ),
+                  Text(
+                    '+62 8222-999-777-1',
+                    style: TextStyle(
+                      color: Colors.teal,
+                      fontSize: 40,
+                      fontFamily: 'SourceSansPro',
+                    ),
+                  )
+                ],
+              ),
+            ),
+            Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(25),
+                color: Colors.white,
+              ),
+              padding: EdgeInsets.all(20),
+              margin: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                    size: 50,
+                  ),
+                  SizedBox(
+                    width: 50,
+                  ),
+                  Text(
+                    'reinhartchristian17@gmail.com',
+                    style: TextStyle(
+                      color: Colors.teal,
+                      fontSize: 40,
+                      fontFamily: 'SourceSansPro',
+                    ),
+                  )
+                ],
+              ),
+            ),
           ],
         )),
       ),
